@@ -1,0 +1,70 @@
+/* Cards gerais */
+.lead-card {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Leads convidadas */
+.lead-card.invited {
+  color: white;
+  background-color: #444444;
+  border: 1px solid black;
+}
+
+.lead-name {
+  text-align: center;        
+  font-weight: 900;          
+  font-size: 1.5rem;       
+  margin: 0.5rem 0;          
+}
+
+/* Leads aceitas */
+.lead-card.accepted {
+  background-color: #c2dbc2;
+  border: 1px solid rgb(56, 77, 56);
+}
+
+/* Leads recusadas */
+.lead-card.declined {
+  background-color: #e0cdcd;
+  border: 1px solid rgb(151, 2, 2);
+}
+
+/* Botões */
+.lead-actions {
+  margin-top: 0.5rem;
+}
+
+.btn-accept {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-decline {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Preço com desconto */
+.discount-label {
+  color: #1452fd;
+}
+
+/* Mensagem de nenhum lead */
+.no-leads {
+  text-align: center;
+  font-style: italic;
+  margin: 1rem 0;
+}

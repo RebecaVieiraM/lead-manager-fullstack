@@ -1,0 +1,51 @@
+.add-lead-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #1e2b4d; /* azul escuro para combinar com leads convidados */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-family: Arial, sans-serif;
+}
+
+.add-lead-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.add-lead-form input,
+.add-lead-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-lead-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.add-lead-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-lead-form button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+.form-error {
+  color: #ffbaba;
+  text-align: center;
+  font-size: 0.9rem;
+}
