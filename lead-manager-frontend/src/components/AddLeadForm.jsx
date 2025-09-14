@@ -14,7 +14,7 @@ export default function AddLeadForm({ onLeadAdded }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Função para aplicar máscara de telefone brasileira (11 dígitos)
+  // Função para aplicar máscara de telefone (11 dígitos)
   const formatPhone = (value) => {
     value = value.replace(/\D/g, ''); // Remove tudo que não é número
     if (value.length > 11) value = value.slice(0, 11);
@@ -121,3 +121,4 @@ export default function AddLeadForm({ onLeadAdded }) {
     </form>
   );
 }
+
