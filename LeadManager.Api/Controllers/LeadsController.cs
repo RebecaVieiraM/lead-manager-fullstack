@@ -28,7 +28,7 @@ namespace LeadManager.Api.Controllers
         {
             var lead = await _leadService.AcceptLeadAsync(id);
             if (lead == null) return NotFound();
-            return Ok(lead); // retorna lead atualizado
+            return Ok(lead);
         }
 
 
@@ -49,9 +49,10 @@ namespace LeadManager.Api.Controllers
             lead.Status = LeadStatus.Invited;
             lead.CreatedAt = DateTime.Now;
 
-            _leadService.AddLead(lead); // vamos adicionar método no LeadService
+            _leadService.AddLead(lead); 
             return CreatedAtAction(nameof(GetAllLeads), new { id = lead.Id }, lead);
         }
 
     }
 }
+
