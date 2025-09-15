@@ -35,7 +35,8 @@ export default function LeadsInvited({ leads, onStatusChange }) {
     try {
       await api.put(`/leads/${lead.id}/decline`, { ...lead, status: 2 });
 
-      // Remove do estado local ou atualiza o status
+      console.log(`E-mail simulado para vendas@test.com - Lead recusado: ${lead.id} - ${lead.firstName} ${lead.lastName}`);
+
       onStatusChange({ id: lead.id, status: 2 });
     } catch (e) {
       console.error('Erro ao recusar lead:', e);
