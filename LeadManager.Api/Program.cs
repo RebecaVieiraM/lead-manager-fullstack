@@ -9,7 +9,6 @@ builder.Services.AddDbContext<LeadContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Services
-builder.Services.AddScoped<IEmailService, FakeEmailService>();
 builder.Services.AddScoped<LeadService>();
 
 builder.Services.AddControllers();
@@ -36,3 +35,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.Run();
+
